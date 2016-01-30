@@ -21,6 +21,8 @@ the line added is:
 if (domain.substr(-9) === ".multifox") { arr = domain.split("."); arr.splice(-2,2); domain = arr.join("."); } //brr
 ```
 
+I know it's not perfect. If a tab is open with cookie `github.com.github-com-2.multifox` and a tab is open with cookie `github.com` and the multifox tab is closed, it's cookies will remain as long as the non-multifox github.com tab is open as all the modification does is strip the multifox suffix when checking cookies agains the whitelist of open tabs. But at least it makes browsing with Multifox+SDC not annoying by not deleting cookies which are being used.
+
 ## Modifying the extension yourself
 
 This is recommended if you don't trust me. All I am doing is uploading the contents of another person's extension with a single line changed which you can do yourself. 
