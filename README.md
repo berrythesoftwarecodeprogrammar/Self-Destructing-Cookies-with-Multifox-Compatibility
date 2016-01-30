@@ -7,7 +7,7 @@ ALL CODE belongs to [Ove](https://addons.mozilla.org/en-US/firefox/user/ovso/) (
 
 Really just requires adding a single line to a function in `main.js`
 
-```
+```javascript
 function checkDomainWhitelist(domain, ignoreSession) {
   // an empty domain indicates a file:// type url, keep those cookies
   if (domain == "") return true;
@@ -19,7 +19,7 @@ function checkDomainWhitelist(domain, ignoreSession) {
 ```
 
 the line added is:
-```
+```javascript
 if (domain.substr(-9) === ".multifox") { arr = domain.split("."); arr.splice(-2,2); domain = arr.join("."); } //brr
 ```
 
