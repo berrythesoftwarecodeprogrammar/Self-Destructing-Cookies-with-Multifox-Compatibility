@@ -1,9 +1,13 @@
 # Self Destructing Cookies (Multifox patch)
 [Self-Destructing Cookies Firefox Addon](https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/) modified to not delete cookies belonging to [Multifox](https://addons.mozilla.org/en-US/firefox/addon/multifox/) tabs.
 
-Download on [Releases page](https://github.com/berrythesoftwarecodeprogrammar/Self-Destructing-Cookies-Multifox-patch/releases)
+Download the .xpi on [Releases page](https://github.com/berrythesoftwarecodeprogrammar/Self-Destructing-Cookies-Multifox-patch/releases)
 
 ALL CODE belongs to [Ove](https://addons.mozilla.org/en-US/firefox/user/ovso/) (sdc@elektro-eel.org) except for the single line I added lol
+
+*WARNING* This addon is unsigned. If anybody has any idea on how to create firefox addons and can help fork the original addon it would be nice. I tried to modify and sign the addon but had no luck.
+
+## Info
 
 Really just requires adding a single line to a function in `main.js`
 
@@ -36,6 +40,5 @@ This is recommended if you don't trust me. All I am doing is uploading the conte
 5. Zip up the contents with the extension .xpi instead of .zip
 6. Drag into firefox
 
-## What I will do
-
-I will try to upload the latest modified .xpi on here under [Releases](https://github.com/berrythesoftwarecodeprogrammar/Self-Destructing-Cookies-Multifox-patch/releases) whenever the addon is updated, for the lazy ones
+## License 
+[GNU General Public License, version 2.0](http://www.gnu.org/licenses/gpl-2.0.html)
