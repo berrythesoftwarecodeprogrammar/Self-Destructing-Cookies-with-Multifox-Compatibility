@@ -1,9 +1,8 @@
-# Self Destructing Cookies (with Multifox Support)
-This is just the Firefox addon [Self-Destructing Cookies](https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/) modified to not delete cookies belonging to [Multifox](https://addons.mozilla.org/en-US/firefox/addon/multifox/) tabs.
+# Self Destructing Cookies (with Multifox Compatibility)
+This is just the [Self-Destructing Cookies](https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/) addon for Firefox, modified to not delete cookies belonging to [Multifox](https://addons.mozilla.org/en-US/firefox/addon/multifox/) tabs.
 
-*WARNING This addon is unsigned. If anybody has any idea on how to create firefox addons and can help fork the original addon it would be nice. I tried to modify and sign the addon but had no luck.*
-
-Download the .xpi on [Releases page](https://github.com/berrythesoftwarecodeprogrammar/Self-Destructing-Cookies-Multifox-patch/releases)
+Download the latest .xpi on [Releases page](https://github.com/berrythesoftwarecodeprogrammar/Self-Destructing-Cookies-Multifox-patch/releases)  
+*IT IS NOW SIGNED THANKS TO SDC USING JPM NOW :D*
 
 All code belongs to [Ove](https://addons.mozilla.org/en-US/firefox/user/ovso/) (sdc@elektro-eel.org) except for the single line I added lol
 
@@ -34,11 +33,14 @@ I know it's not perfect. If a tab is open with cookie `github.com.github-com-2.m
 This is recommended if you don't trust me. All I am doing is uploading the contents of another person's extension with a single line changed which you can do yourself. 
 
 1. Visit the [Self-destructing Cookies addon page](https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/)
-2. Right click on the install button and save as
+2. Right click on the install button and Save As
 3. Extract the .xpi contents with an archive manager (its just a zip)
-4. Add the line to `\resources\self-destructing-cookies\lib\main.js`
-5. Zip up the contents with the extension .xpi instead of .zip
-6. Drag into firefox
+4. Add the line mentioned above to `\resources\self-destructing-cookies\lib\main.js`
+5. Delete the `META-INF` folder
+6. Edit `package.json` and `install.rdf` to reflect your new addon ID, title and version
+7. `jpm xpi`
+8. `jpm sign --api-key (your key) --api-secret (your secret) --xpi (your xpi)`
+9. Drag signed .xpi into firefox
 
 ## License 
-[GNU General Public License, version 2.0](http://www.gnu.org/licenses/gpl-2.0.html)
+[GNU General Public License, version 2.0](http://www.gnu.org/licenses/gpl-2.0.html) (Original license of SDC)
