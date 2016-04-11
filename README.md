@@ -1,8 +1,9 @@
 # Self Destructing Cookies (with Multifox Compatibility)
 This is just the [Self-Destructing Cookies](https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/) addon for Firefox, modified to not delete cookies belonging to [Multifox](https://addons.mozilla.org/en-US/firefox/addon/multifox/) tabs.
 
-Download the latest .xpi on [Releases page](https://github.com/berrythesoftwarecodeprogrammar/Self-Destructing-Cookies-Multifox-patch/releases)  
+Download signed `.xpi`s at [Releases page](https://github.com/berrythesoftwarecodeprogrammar/Self-Destructing-Cookies-Multifox-patch/releases)  
 **IT IS NOW SIGNED THANKS TO SDC USING JPM NOW :D**
+Download latest (0.4.101) [🡇](https://github.com/berrythesoftwarecodeprogrammar/Self-Destructing-Cookies-with-Multifox-Support/releases/tag/0.4.101)
 
 All code belongs to [Ove](https://addons.mozilla.org/en-US/firefox/user/ovso/) (sdc@elektro-eel.org) except for the single line I added lol
 
